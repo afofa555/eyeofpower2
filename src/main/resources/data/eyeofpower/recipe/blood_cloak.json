@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": ["PRP", "RNR", "R R"],
+  "key": {
+    "P": { "item": "minecraft:phantom_membrane" },
+    "R": { "item": "minecraft:red_wool" },
+    "N": { "item": "minecraft:nether_star" }
+  },
+  "result": { "id": "eyeofpower:blood_cloak", "count": 1 }
+}

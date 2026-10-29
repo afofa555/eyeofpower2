@@ -1,0 +1,17 @@
+{
+  "time_stop": { "sounds": ["eyeofpower:time_stop"] },
+  "time_resume": { "sounds": ["eyeofpower:time_resume"] },
+  "clock_tick": { "sounds": ["eyeofpower:clock_tick"] },
+  "clock_heartbeat": { "sounds": ["eyeofpower:clock_heartbeat"] },
+  "hole_open": { "sounds": ["eyeofpower:hole_open"] },
+  "hole_hum": { "sounds": ["eyeofpower:hole_hum"] },
+  "hole_close": { "sounds": ["eyeofpower:hole_close"] },
+  "soul_scream": { "sounds": ["eyeofpower:soul_scream_1", "eyeofpower:soul_scream_2", "eyeofpower:soul_scream_3"] },
+  "blood_start": { "sounds": ["eyeofpower:blood_start"] },
+  "mirror_start": { "sounds": ["eyeofpower:mirror_start"] },
+  "accel_start": { "sounds": ["eyeofpower:accel_start"] },
+  "portal_open": { "sounds": ["eyeofpower:portal_open"] },
+  "portal_enter": { "sounds": ["eyeofpower:portal_enter"] },
+  "clone_spawn": { "sounds": ["eyeofpower:clone_spawn"] },
+  "eye_awaken": { "sounds": ["eyeofpower:eye_awaken"] }
+}
