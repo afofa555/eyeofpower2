@@ -10,7 +10,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 
 /** Сервер -> клиент: состояние мировых эффектов. */
-public record StatePayload(int type, int value, UUID owner, double x, double y, double z, String dim)
+public record StatePayload(int kind, int value, UUID owner, double x, double y, double z, String dim)
         implements CustomPacketPayload {
     public static final int TIME = 0;
     public static final int BLOOD = 1;
@@ -27,12 +27,12 @@ public record StatePayload(int type, int value, UUID owner, double x, double y, 
     public static final StreamCodec<RegistryFriendlyByteBuf, StatePayload> CODEC =
             StreamCodec.ofMember(StatePayload::write, StatePayload::read);
 
-    public static StatePayload simple(int type, int value, UUID owner) {
-        return new StatePayload(type, value, owner == null ? NONE : owner, 0, 0, 0, "");
+    public static StatePayload simple(int kind, int value, UUID owner) {
+        return new StatePayload(kind, value, owner == null ? NONE : owner, 0, 0, 0, "");
     }
 
     private void write(RegistryFriendlyByteBuf buf) {
-        buf.writeVarInt(type);
+        buf.writeVarInt(kind);
         buf.writeVarInt(value);
         buf.writeUUID(owner);
         buf.writeDouble(x);
