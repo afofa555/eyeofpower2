@@ -62,7 +62,7 @@ public class ClientState {
     public static void apply(StatePayload p, UUID self) {
         long now = Util.getMillis();
         boolean on = p.value() != 0;
-        switch (p.type()) {
+        switch (p.kind()) {
             case StatePayload.TIME -> {
                 if (on && !timeActive) {
                     timeStartMs = now;
